@@ -1,152 +1,76 @@
-
 .navbar {
-    font-size: 17px;
-    font-weight: 500;
-    background-color: rgba(255, 255, 255, 0.884);
-    .icon {
-        margin: 10px;
-    }
-    .navbar-brand {
-        color: rgb(9, 141, 194);
-        font-size: x-large;
-    }
-    .nav-item:hover {
-        background-color: rgba(204, 204, 204, 0.308);
-        border-radius: 10px;
-        animation: nav-item 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    }
-    .nav-link:hover {
-        color: black;
-    }
-}
+  font-size: 17px;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.884);
 
-.container {
-    margin-bottom: 20px;
-    text-align: justify;
+  .icon {
+    margin: 10px;
+  }
 
-    h3 {
-        text-align: center;
-    }
+  .navbar-brand {
+    color: rgb(9, 141, 194);
+    font-size: x-large;
+  }
 
-    .main__header {
-        color: rgb(94, 94, 94);
-    }
-    .jumbotron {
-        text-align: center;
-        color: rgb(255, 255, 255);
-        margin: 20px;
-        border-radius: 10px;
-        animation: content 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-        background-image: url("../assets/office.jpg");
-    }
-    .jumbotron::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        background: rgba(105, 105, 105, 0.801);
-        z-index: -1;
-    }
-    .jumbotron:hover {
-        animation: content-hover 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    }
-    .jumbotron-text {
-        font-weight: 500;
-        animation: jumbotron-text 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-    }
-    @media (max-width: 767px) {
-        .jumbotron {
-            display: none;
-        }
-    }
-    @media (min-width: 767px) {
-        .main__header {
-            display: none;
-        }
-    }
-    .main__column {
-        background-color: rgb(247, 247, 247);
-        border-radius: 3px;
-        padding: 30px 0;
-    }
-    .card-img-top {
-        animation: content 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    }
-    .card-img-top:hover {
-        animation: content-hover 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    }
+  .nav-item:hover {
+    background-color: rgba(204, 204, 204, 0.308);
+    border-radius: 10px;
+    animation: nav-item 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  }
+
+  .nav-link:hover {
+    color: black;
+  }
 }
 
 .a__animate {
-    text-decoration: none;
-    display: inline-block;
-    padding: 5px;
-    position: relative;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+  position: relative;
 }
 
 .a__animate:after {
-    background: none repeat scroll 0 0 transparent;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: rgb(142, 207, 238);
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: rgb(142, 207, 238);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
 }
 
 .a__animate:hover:after {
-    width: 100%;
-    left: 0;
+  width: 100%;
+  left: 0;
 }
 
 .footer__content {
-    text-align: center;
+  text-align: center;
 }
 
 .footer__social-media {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .footer__social-media__icon {
-    margin: 10px;
+  margin: 10px;
 }
 
 @keyframes nav-item {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.1);
-    }
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
 }
 
-@keyframes jumbotron-text {
-    0% {
-        filter: blur(12px);
-        opacity: 0;
-    }
-    100% {
-        filter: blur(0px);
-        opacity: 1;
-    }
-}
-@keyframes content {
-    0% {
-        transform: scale(1.02);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-@keyframes content-hover {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.02);
-    }
-}
+
+
+
+
+
+

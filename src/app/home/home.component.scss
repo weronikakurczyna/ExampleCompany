@@ -1,0 +1,66 @@
+
+.container {
+  margin-bottom: 20px;
+  text-align: justify;
+
+  h3 {
+    text-align: center;
+  }
+
+  .main__header {
+    color: rgb(94, 94, 94);
+  }
+
+
+
+  @media (max-width: 767px) {
+    .jumbotron {
+      display: none;
+    }
+  }
+  @media (min-width: 767px) {
+    .main__header {
+      display: none;
+    }
+  }
+}
+  .jumbotron {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    border-radius: 10px;
+    animation: content 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    background-image: url('../../assets/office.jpg');
+  }
+
+  .jumbotron::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(105, 105, 105, 0.801);
+    z-index: -1;
+  }
+
+  .jumbotron:hover {
+    animation: content-hover 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  .jumbotron-text {
+    font-weight: 500;
+    animation: jumbotron-text 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  }
+
+@keyframes jumbotron-text {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+

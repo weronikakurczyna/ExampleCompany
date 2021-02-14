@@ -1,27 +1,27 @@
+<!--Navigation-->
 <nav class="navbar sticky-top navbar-expand-lg navbar-light">
   <img src="../assets/b.png" width="30" height="30" class="d-inline-block align-top icon" alt="CompanyName">
-  <a class="navbar-brand" href="#">ExampleCompany</a>
-
+  <a class="navbar-brand" routerLink="">ExampleCompany</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link a__animate" href="#">Home <span class="sr-only">(current)</span></a>
+        <a routerLink="" class="nav-link a__animate">Home<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link a__animate" href="#">Information</a>
+        <a routerLink="information" class="nav-link a__animate" href="#">Information</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link a__animate" href="#">For student</a>
+        <a routerLink="clients" class="nav-link a__animate" href="#">Clients</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link a__animate" href="#">For employee</a>
+        <a routerLink="career" class="nav-link a__animate" href="#">Career</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link a__animate" href="#">Contact us</a>
+        <a routerLink="contact" class="nav-link a__animate" href="#">Contact</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -31,77 +31,7 @@
   </div>
 </nav>
 
-<div class="container main__container">
-  <div class="row">
-    <div class="col-12">
-      <h2 class="main__header">
-        Welcome to our company
-      </h2>
-      <div class="jumbotron">
-        <div class="container jumbotron-text">
-          <h3 class="display-3">Welcome to our company</h3>
-          <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.
-            Maecenas malesuada elit lectus felis, malesuada ultricies. Lorem ipsum dolor sit amet enim. Etiam
-            ullamcorper. Suspendisse a pellentesque dui, non felis.
-            Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6 col-xs-12 main__column">
-      <h3>Our locations</h3>
-      <div class="row justify-content-center">
-        <div class="card" style="width: 70%;">
-          <img class="card-img-top" src="../assets/location1.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-text">Warsaw</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non
-              felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a,
-              ultricies porta urna. </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="card" style="width: 70%;">
-          <img class="card-img-top" src="../assets/location2.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-text">Krakow</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non
-              felis. Maecenas malesuada elit lectus felis, malesuada ultricies. .</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6 col-xs-12 main__column">
-      <h3>Our team</h3>
-      <div class="row justify-content-center">
-        <div class="card" style="width: 70%;">
-          <img class="card-img-top" src="../assets/team1.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Team1</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non
-              felis. Maecenas malesuada elit lectus felis, malesuada ultricies. </p>
-            <a href="#" class="btn btn-outline-info">Show more</a>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="card" style="width: 70%;">
-          <img class="card-img-top" src="../assets/team2.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Team2</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non
-              felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Suspendisse a pellentesque dui, non
-              felis. Maecenas malesuada elit lectus felis, malesuada ultricies. </p>
-            <a href="#" class="btn btn-outline-info">Show more</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<router-outlet></router-outlet>
 
 <footer class="bg-light text-center">
   <div class="container p-4">
@@ -118,16 +48,16 @@
         <h5 class="text-uppercase">Site map</h5>
         <ul class="list-unstyled">
           <li>
-            <a href="#!" class="text-dark a__animate">Information</a>
+            <a routerLink="/information" class="text-dark a__animate">Information</a>
           </li>
           <li>
-            <a href="#!" class="text-dark a__animate">For student</a>
+            <a routerLink="/clients" class="text-dark a__animate">Clients</a>
           </li>
           <li>
-            <a href="#!" class="text-dark a__animate">For employee</a>
+            <a routerLink="/career" class="text-dark a__animate">Career</a>
           </li>
           <li>
-            <a href="#!" class="text-dark a__animate">Contact us</a>
+            <a routerLink="/contact" class="text-dark a__animate">Contact</a>
           </li>
         </ul>
       </div>
@@ -136,16 +66,16 @@
         <h5 class="text-uppercase">Company</h5>
         <ul class="list-unstyled">
           <li>
-            <a href="#!" class="text-dark a__animate">Link 1</a>
+            <a href="#" class="text-dark a__animate">Link 1</a>
           </li>
           <li>
-            <a href="#!" class="text-dark a__animate">Link 2</a>
+            <a href="#" class="text-dark a__animate">Link 2</a>
           </li>
           <li>
-            <a href="#!" class="text-dark a__animate">Link 3</a>
+            <a href="#" class="text-dark a__animate">Link 3</a>
           </li>
           <li>
-            <a href="#!" class="text-dark a__animate">Link 4</a>
+            <a href="#" class="text-dark a__animate">Link 4</a>
           </li>
         </ul>
       </div>
@@ -160,3 +90,4 @@
     </div>
   </div>
 </footer>
+
